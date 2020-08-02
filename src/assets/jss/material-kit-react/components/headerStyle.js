@@ -1,6 +1,6 @@
 import {
   container,
-  defaultFont,
+  // defaultFont,
   primaryColor,
   infoColor,
   successColor,
@@ -10,7 +10,7 @@ import {
   transition,
   boxShadow,
   drawerWidth
-} from "assets/jss/material-kit-react.js";
+} from "../../material-kit-react";
 
 const headerStyle = {
   appBar: {
@@ -52,17 +52,17 @@ const headerStyle = {
     flex: 1
   },
   title: {
-    ...defaultFont,
+    fontFamily: "Noto Serif",
     lineHeight: "30px",
-    fontSize: "18px",
+    fontSize: "24px",
     borderRadius: "3px",
     textTransform: "none",
-    color: "inherit",
+    color: "#efb6b2",
     padding: "8px 16px",
-    letterSpacing: "unset",
+    letterSpacing: "2px",
     "&:hover,&:focus": {
-      color: "inherit",
-      background: "transparent"
+      color: "#efb6b2",
+      background: "white"
     }
   },
   appResponsive: {

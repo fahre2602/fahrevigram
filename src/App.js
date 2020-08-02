@@ -4,13 +4,21 @@ import UploadForm from './comps/UploadForm';
 import ImageGrid from './comps/ImageGrid';
 import Modal from './comps/Modal';
 
+import { motion } from 'framer-motion';
+
 function App() {
   const [selectedImg, setSelectedImg] = useState(null);
   const [selectedCaption, setSelectedCaption] = useState(null);
 
   return (
     <div className="App">
-      <Title/>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <Title/>
+      </motion.div>
       <UploadForm />
       <ImageGrid setSelectedImg={setSelectedImg} setSelectedCaption={setSelectedCaption} />
       { selectedImg && (

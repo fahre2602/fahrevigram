@@ -247,7 +247,7 @@ const buttonStyle = {
   },
   transparent: {
     "&,&:focus,&:hover,&:visited": {
-      color: "inherit",
+      color: "black",
       background: "transparent",
       boxShadow: "none"
     }
