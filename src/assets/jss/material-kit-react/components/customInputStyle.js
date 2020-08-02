@@ -12,6 +12,8 @@ const customInputStyle = {
     }
   },
   underline: {
+    marginLeft: "25px",
+    marginRight: "25px",
     "&:hover:not($disabled):before,&:before": {
       borderColor: "#D2D2D2 !important",
       borderWidth: "1px !important"
@@ -45,6 +47,7 @@ const customInputStyle = {
     fontSize: "14px",
     lineHeight: "1.42857",
     top: "10px",
+    marginLeft: "20px",
     letterSpacing: "unset",
     "& + $underline": {
       marginTop: "0px"
@@ -57,7 +60,8 @@ const customInputStyle = {
     color: successColor + " !important"
   },
   formControl: {
-    margin: "0 0 17px 0",
+    borderRadius: "6px",
+    margin: "0 0 10px 0",
     paddingTop: "27px",
     position: "relative",
     "& svg,& .fab,& .far,& .fal,& .fas,& .material-icons": {

@@ -282,6 +282,7 @@ const buttonStyle = {
     }
   },
   justIcon: {
+    marginTop: "-35px",
     paddingLeft: "12px",
     paddingRight: "12px",
     fontSize: "20px",

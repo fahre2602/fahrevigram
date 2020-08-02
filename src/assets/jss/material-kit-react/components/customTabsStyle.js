@@ -8,6 +8,12 @@ const customTabsStyle = {
     float: "right",
     padding: "10px 0px 10px 10px !important"
   },
+  captionContent: {
+    color: "black",
+    fontFamily: "Noto Serif",
+    letterSpacing: 1,
+    textAlign: "center"
+  },
   displayNone: {
     display: "none !important"
   },
@@ -53,10 +59,6 @@ const customTabsStyle = {
     "&,& *": {
       letterSpacing: "normal !important"
     }
-  },
-  captionContent: {
-    color: "#999",
-    textAlign: "center"
   }
 };
 
