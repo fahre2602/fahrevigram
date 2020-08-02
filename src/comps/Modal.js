@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from "@material-ui/core/styles";
 import Favorite from "@material-ui/icons/Favorite";
-import Switch from '@material-ui/core/Switch';
 import Paper from '@material-ui/core/Paper';
 import Zoom from '@material-ui/core/Zoom';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -37,9 +36,14 @@ const Modal = ({ setSelectedImg, selectedImg, setSelectedCaption, selectedCaptio
       animate={{ opacity: 1 }}
     >
       <motion.img src={selectedImg} alt="enlarged pic" 
-        initial={{ y: "-100vh" }}
-        animate={{ y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
       />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
       <Container maxWidth="sm">
         <CustomTabs
           headerColor="primary"
@@ -87,6 +91,7 @@ const Modal = ({ setSelectedImg, selectedImg, setSelectedCaption, selectedCaptio
           ]}
         />
       </Container>
+      </motion.div>
     </motion.div>
   )
 }
